@@ -46,7 +46,7 @@ class Solution:
             for i in range(length):
                 for j in range(length):
                     if arr[i] > arr[j] and arr[j] > lis[-1]:
-                        lis = lis.append(arr[j])
+                        lis.append(arr[j])
                         answer += 1
             return answer
 
