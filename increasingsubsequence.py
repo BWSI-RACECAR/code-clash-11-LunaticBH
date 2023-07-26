@@ -40,8 +40,7 @@ class Solution:
             #type arr: list of int
             #return type: int
             length = len(arr)
-            lis = []      
-            lis = lis.append(arr[0])
+            lis = [arr[0]]      
             answer = 1
             
             for i in range(length):
@@ -49,8 +48,6 @@ class Solution:
                     if arr[i] > arr[j] and arr[j] > lis[-1]:
                         lis = lis.append(arr[j])
                         answer += 1
-                    elif None:
-                        return answer
             return answer
 
 def main():
