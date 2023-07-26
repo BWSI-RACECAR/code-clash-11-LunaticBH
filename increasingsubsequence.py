@@ -49,6 +49,8 @@ class Solution:
                     if arr[i] > arr[j] and arr[j] > lis[-1]:
                         lis = lis.append(arr[j])
                         answer += 1
+                    elif None:
+                        return answer
             return answer
 
 def main():
