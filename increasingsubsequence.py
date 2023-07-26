@@ -44,8 +44,8 @@ class Solution:
             lis = lis.append(arr[0])
             answer = 1
             
-            for i in range(1, length):
-                for j in range(1,length):
+            for i in range(length):
+                for j in range(length):
                     if arr[i] > arr[j] and arr[j] > lis[-1]:
                         lis = lis.append(arr[j])
                         answer += 1
