@@ -41,13 +41,13 @@ class Solution:
             #return type: int
             length = len(arr)
             lis = []      
-            lis += arr[0]
+            lis = lis.append(arr[0])
             answer = 1
             
             for i in range(1, length):
                 for j in range(1,length):
                     if arr[i] > arr[j] and arr[j] > lis[-1]:
-                        lis += arr[j]
+                        lis = lis.append(arr[j])
                         answer += 1
             return answer
 
